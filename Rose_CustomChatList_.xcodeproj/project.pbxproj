@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CE1054A7447B7F695018CEB /* libPods-Rose_CustomChatList_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DA95D404F069E9E992FFED /* libPods-Rose_CustomChatList_Tests.a */; };
+		622C04E3DE03B915917E049D /* libPods-Rose_CustomChatList_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCB7B3E04CD659A24B778A1 /* libPods-Rose_CustomChatList_.a */; };
+		DF5CA675071D920B78A2447B /* libPods-Rose_CustomChatList_UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E552942DAEE52F2808ABDECD /* libPods-Rose_CustomChatList_UITests.a */; };
+		EDC5051F1ECD7AE4008E68A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5051E1ECD7AE4008E68A1 /* main.m */; };
+		EDC505221ECD7AE4008E68A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505211ECD7AE4008E68A1 /* AppDelegate.m */; };
+		EDC505251ECD7AE4008E68A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505241ECD7AE4008E68A1 /* ViewController.m */; };
+		EDC505281ECD7AE4008E68A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC505261ECD7AE4008E68A1 /* Main.storyboard */; };
+		EDC5052A1ECD7AE4008E68A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC505291ECD7AE4008E68A1 /* Assets.xcassets */; };
+		EDC5052D1ECD7AE4008E68A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC5052B1ECD7AE4008E68A1 /* LaunchScreen.storyboard */; };
+		EDC505381ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505371ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.m */; };
+		EDC505431ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505421ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.m */; };
+		EDC505531ECD7F6B008E68A1 /* Rose_IM_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505521ECD7F6B008E68A1 /* Rose_IM_Manager.m */; };
+		EDC505561ECD87B6008E68A1 /* chatRoomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505551ECD87B6008E68A1 /* chatRoomVC.m */; };
+		EDC5055A1ECD893C008E68A1 /* Rose_ChatRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505591ECD893C008E68A1 /* Rose_ChatRoomView.m */; };
+		EDC5055E1ECD9161008E68A1 /* Rose_TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5055C1ECD9161008E68A1 /* Rose_TextCell.m */; };
+		EDC5055F1ECD9161008E68A1 /* Rose_TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDC5055D1ECD9161008E68A1 /* Rose_TextCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDC505341ECD7AE4008E68A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC505121ECD7AE4008E68A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC505191ECD7AE4008E68A1;
+			remoteInfo = Rose_CustomChatList_;
+		};
+		EDC5053F1ECD7AE4008E68A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC505121ECD7AE4008E68A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC505191ECD7AE4008E68A1;
+			remoteInfo = Rose_CustomChatList_;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D2BCAC363D9523161A9EDAF /* Pods-Rose_CustomChatList_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rose_CustomChatList_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rose_CustomChatList_Tests/Pods-Rose_CustomChatList_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2644033FBC27559559F2CE27 /* Pods-Rose_CustomChatList_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rose_CustomChatList_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rose_CustomChatList_Tests/Pods-Rose_CustomChatList_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		28DA95D404F069E9E992FFED /* libPods-Rose_CustomChatList_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rose_CustomChatList_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		917407ED1FBE1D0D47860CE1 /* Pods-Rose_CustomChatList_UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rose_CustomChatList_UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rose_CustomChatList_UITests/Pods-Rose_CustomChatList_UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DA5406956862140AD5E93B2 /* Pods-Rose_CustomChatList_.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rose_CustomChatList_.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rose_CustomChatList_/Pods-Rose_CustomChatList_.release.xcconfig"; sourceTree = "<group>"; };
+		A98A98382DE54569A1409A40 /* Pods-Rose_CustomChatList_.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rose_CustomChatList_.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rose_CustomChatList_/Pods-Rose_CustomChatList_.debug.xcconfig"; sourceTree = "<group>"; };
+		ADCB7B3E04CD659A24B778A1 /* libPods-Rose_CustomChatList_.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rose_CustomChatList_.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCCEEBB59DA175C530CF658 /* Pods-Rose_CustomChatList_UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rose_CustomChatList_UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rose_CustomChatList_UITests/Pods-Rose_CustomChatList_UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E552942DAEE52F2808ABDECD /* libPods-Rose_CustomChatList_UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rose_CustomChatList_UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC5051A1ECD7AE4008E68A1 /* Rose_CustomChatList_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rose_CustomChatList_.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC5051E1ECD7AE4008E68A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDC505201ECD7AE4008E68A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDC505211ECD7AE4008E68A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDC505231ECD7AE4008E68A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDC505241ECD7AE4008E68A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDC505271ECD7AE4008E68A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDC505291ECD7AE4008E68A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC5052C1ECD7AE4008E68A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDC5052E1ECD7AE4008E68A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC505331ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rose_CustomChatList_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC505371ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rose_CustomChatList_Tests.m; sourceTree = "<group>"; };
+		EDC505391ECD7AE4008E68A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC5053E1ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rose_CustomChatList_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC505421ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rose_CustomChatList_UITests.m; sourceTree = "<group>"; };
+		EDC505441ECD7AE4008E68A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC505511ECD7F6B008E68A1 /* Rose_IM_Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rose_IM_Manager.h; sourceTree = "<group>"; };
+		EDC505521ECD7F6B008E68A1 /* Rose_IM_Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rose_IM_Manager.m; sourceTree = "<group>"; };
+		EDC505541ECD87B6008E68A1 /* chatRoomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatRoomVC.h; sourceTree = "<group>"; };
+		EDC505551ECD87B6008E68A1 /* chatRoomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatRoomVC.m; sourceTree = "<group>"; };
+		EDC505581ECD893C008E68A1 /* Rose_ChatRoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rose_ChatRoomView.h; sourceTree = "<group>"; };
+		EDC505591ECD893C008E68A1 /* Rose_ChatRoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rose_ChatRoomView.m; sourceTree = "<group>"; };
+		EDC5055B1ECD9161008E68A1 /* Rose_TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rose_TextCell.h; sourceTree = "<group>"; };
+		EDC5055C1ECD9161008E68A1 /* Rose_TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rose_TextCell.m; sourceTree = "<group>"; };
+		EDC5055D1ECD9161008E68A1 /* Rose_TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Rose_TextCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC505171ECD7AE4008E68A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622C04E3DE03B915917E049D /* libPods-Rose_CustomChatList_.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC505301ECD7AE4008E68A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE1054A7447B7F695018CEB /* libPods-Rose_CustomChatList_Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5053B1ECD7AE4008E68A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5CA675071D920B78A2447B /* libPods-Rose_CustomChatList_UITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		867AA45BB5D2FB9893E53828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADCB7B3E04CD659A24B778A1 /* libPods-Rose_CustomChatList_.a */,
+				28DA95D404F069E9E992FFED /* libPods-Rose_CustomChatList_Tests.a */,
+				E552942DAEE52F2808ABDECD /* libPods-Rose_CustomChatList_UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EDB78687E87BD4CA157A0F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98A98382DE54569A1409A40 /* Pods-Rose_CustomChatList_.debug.xcconfig */,
+				9DA5406956862140AD5E93B2 /* Pods-Rose_CustomChatList_.release.xcconfig */,
+				0D2BCAC363D9523161A9EDAF /* Pods-Rose_CustomChatList_Tests.debug.xcconfig */,
+				2644033FBC27559559F2CE27 /* Pods-Rose_CustomChatList_Tests.release.xcconfig */,
+				917407ED1FBE1D0D47860CE1 /* Pods-Rose_CustomChatList_UITests.debug.xcconfig */,
+				BCCCEEBB59DA175C530CF658 /* Pods-Rose_CustomChatList_UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDC505111ECD7AE4008E68A1 = {
+			isa = PBXGroup;
+			children = (
+				EDC5051C1ECD7AE4008E68A1 /* Rose_CustomChatList_ */,
+				EDC505361ECD7AE4008E68A1 /* Rose_CustomChatList_Tests */,
+				EDC505411ECD7AE4008E68A1 /* Rose_CustomChatList_UITests */,
+				EDC5051B1ECD7AE4008E68A1 /* Products */,
+				9EDB78687E87BD4CA157A0F1 /* Pods */,
+				867AA45BB5D2FB9893E53828 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC5051B1ECD7AE4008E68A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC5051A1ECD7AE4008E68A1 /* Rose_CustomChatList_.app */,
+				EDC505331ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.xctest */,
+				EDC5053E1ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC5051C1ECD7AE4008E68A1 /* Rose_CustomChatList_ */ = {
+			isa = PBXGroup;
+			children = (
+				EDC505571ECD88F9008E68A1 /* Rose_ChatRoomView */,
+				EDC505501ECD7F6B008E68A1 /* Rose_IM_Manager */,
+				EDC505201ECD7AE4008E68A1 /* AppDelegate.h */,
+				EDC505211ECD7AE4008E68A1 /* AppDelegate.m */,
+				EDC505541ECD87B6008E68A1 /* chatRoomVC.h */,
+				EDC505551ECD87B6008E68A1 /* chatRoomVC.m */,
+				EDC505231ECD7AE4008E68A1 /* ViewController.h */,
+				EDC505241ECD7AE4008E68A1 /* ViewController.m */,
+				EDC505261ECD7AE4008E68A1 /* Main.storyboard */,
+				EDC505291ECD7AE4008E68A1 /* Assets.xcassets */,
+				EDC5052B1ECD7AE4008E68A1 /* LaunchScreen.storyboard */,
+				EDC5052E1ECD7AE4008E68A1 /* Info.plist */,
+				EDC5051D1ECD7AE4008E68A1 /* Supporting Files */,
+			);
+			path = Rose_CustomChatList_;
+			sourceTree = "<group>";
+		};
+		EDC5051D1ECD7AE4008E68A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC5051E1ECD7AE4008E68A1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDC505361ECD7AE4008E68A1 /* Rose_CustomChatList_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC505371ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.m */,
+				EDC505391ECD7AE4008E68A1 /* Info.plist */,
+			);
+			path = Rose_CustomChatList_Tests;
+			sourceTree = "<group>";
+		};
+		EDC505411ECD7AE4008E68A1 /* Rose_CustomChatList_UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC505421ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.m */,
+				EDC505441ECD7AE4008E68A1 /* Info.plist */,
+			);
+			path = Rose_CustomChatList_UITests;
+			sourceTree = "<group>";
+		};
+		EDC505501ECD7F6B008E68A1 /* Rose_IM_Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EDC505511ECD7F6B008E68A1 /* Rose_IM_Manager.h */,
+				EDC505521ECD7F6B008E68A1 /* Rose_IM_Manager.m */,
+			);
+			path = Rose_IM_Manager;
+			sourceTree = "<group>";
+		};
+		EDC505571ECD88F9008E68A1 /* Rose_ChatRoomView */ = {
+			isa = PBXGroup;
+			children = (
+				EDC505581ECD893C008E68A1 /* Rose_ChatRoomView.h */,
+				EDC505591ECD893C008E68A1 /* Rose_ChatRoomView.m */,
+				EDC5055B1ECD9161008E68A1 /* Rose_TextCell.h */,
+				EDC5055C1ECD9161008E68A1 /* Rose_TextCell.m */,
+				EDC5055D1ECD9161008E68A1 /* Rose_TextCell.xib */,
+			);
+			path = Rose_ChatRoomView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC505191ECD7AE4008E68A1 /* Rose_CustomChatList_ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC505471ECD7AE4008E68A1 /* Build configuration list for PBXNativeTarget "Rose_CustomChatList_" */;
+			buildPhases = (
+				D60A88F28AEDE8DC3CAD1C62 /* [CP] Check Pods Manifest.lock */,
+				EDC505161ECD7AE4008E68A1 /* Sources */,
+				EDC505171ECD7AE4008E68A1 /* Frameworks */,
+				EDC505181ECD7AE4008E68A1 /* Resources */,
+				5C90A307CE776ACBA757AC6F /* [CP] Embed Pods Frameworks */,
+				819FE7D1588BF39F3C8B343B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rose_CustomChatList_;
+			productName = Rose_CustomChatList_;
+			productReference = EDC5051A1ECD7AE4008E68A1 /* Rose_CustomChatList_.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDC505321ECD7AE4008E68A1 /* Rose_CustomChatList_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC5054A1ECD7AE4008E68A1 /* Build configuration list for PBXNativeTarget "Rose_CustomChatList_Tests" */;
+			buildPhases = (
+				5D3A59B898DBD679251B75A8 /* [CP] Check Pods Manifest.lock */,
+				EDC5052F1ECD7AE4008E68A1 /* Sources */,
+				EDC505301ECD7AE4008E68A1 /* Frameworks */,
+				EDC505311ECD7AE4008E68A1 /* Resources */,
+				7D2BB775DC4D156EBFB80334 /* [CP] Embed Pods Frameworks */,
+				D377A680CA2A0DD9A086B5AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC505351ECD7AE4008E68A1 /* PBXTargetDependency */,
+			);
+			name = Rose_CustomChatList_Tests;
+			productName = Rose_CustomChatList_Tests;
+			productReference = EDC505331ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDC5053D1ECD7AE4008E68A1 /* Rose_CustomChatList_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC5054D1ECD7AE4008E68A1 /* Build configuration list for PBXNativeTarget "Rose_CustomChatList_UITests" */;
+			buildPhases = (
+				8B835C86DDC2C49018EE7239 /* [CP] Check Pods Manifest.lock */,
+				EDC5053A1ECD7AE4008E68A1 /* Sources */,
+				EDC5053B1ECD7AE4008E68A1 /* Frameworks */,
+				EDC5053C1ECD7AE4008E68A1 /* Resources */,
+				8AD2016F3EA2EDFD213F0896 /* [CP] Embed Pods Frameworks */,
+				7AC68C60BB51D17F187C8E85 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC505401ECD7AE4008E68A1 /* PBXTargetDependency */,
+			);
+			name = Rose_CustomChatList_UITests;
+			productName = Rose_CustomChatList_UITests;
+			productReference = EDC5053E1ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC505121ECD7AE4008E68A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Marilyn_Rose;
+				TargetAttributes = {
+					EDC505191ECD7AE4008E68A1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L4ZSGZQF44;
+						ProvisioningStyle = Automatic;
+					};
+					EDC505321ECD7AE4008E68A1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDC505191ECD7AE4008E68A1;
+					};
+					EDC5053D1ECD7AE4008E68A1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDC505191ECD7AE4008E68A1;
+					};
+				};
+			};
+			buildConfigurationList = EDC505151ECD7AE4008E68A1 /* Build configuration list for PBXProject "Rose_CustomChatList_" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC505111ECD7AE4008E68A1;
+			productRefGroup = EDC5051B1ECD7AE4008E68A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC505191ECD7AE4008E68A1 /* Rose_CustomChatList_ */,
+				EDC505321ECD7AE4008E68A1 /* Rose_CustomChatList_Tests */,
+				EDC5053D1ECD7AE4008E68A1 /* Rose_CustomChatList_UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC505181ECD7AE4008E68A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC5052D1ECD7AE4008E68A1 /* LaunchScreen.storyboard in Resources */,
+				EDC5052A1ECD7AE4008E68A1 /* Assets.xcassets in Resources */,
+				EDC505281ECD7AE4008E68A1 /* Main.storyboard in Resources */,
+				EDC5055F1ECD9161008E68A1 /* Rose_TextCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC505311ECD7AE4008E68A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5053C1ECD7AE4008E68A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C90A307CE776ACBA757AC6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rose_CustomChatList_/Pods-Rose_CustomChatList_-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D3A59B898DBD679251B75A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC68C60BB51D17F187C8E85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rose_CustomChatList_UITests/Pods-Rose_CustomChatList_UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2BB775DC4D156EBFB80334 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rose_CustomChatList_Tests/Pods-Rose_CustomChatList_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819FE7D1588BF39F3C8B343B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rose_CustomChatList_/Pods-Rose_CustomChatList_-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD2016F3EA2EDFD213F0896 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rose_CustomChatList_UITests/Pods-Rose_CustomChatList_UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B835C86DDC2C49018EE7239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D377A680CA2A0DD9A086B5AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rose_CustomChatList_Tests/Pods-Rose_CustomChatList_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60A88F28AEDE8DC3CAD1C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC505161ECD7AE4008E68A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC505531ECD7F6B008E68A1 /* Rose_IM_Manager.m in Sources */,
+				EDC505561ECD87B6008E68A1 /* chatRoomVC.m in Sources */,
+				EDC5055A1ECD893C008E68A1 /* Rose_ChatRoomView.m in Sources */,
+				EDC505251ECD7AE4008E68A1 /* ViewController.m in Sources */,
+				EDC505221ECD7AE4008E68A1 /* AppDelegate.m in Sources */,
+				EDC5051F1ECD7AE4008E68A1 /* main.m in Sources */,
+				EDC5055E1ECD9161008E68A1 /* Rose_TextCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5052F1ECD7AE4008E68A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC505381ECD7AE4008E68A1 /* Rose_CustomChatList_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC5053A1ECD7AE4008E68A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC505431ECD7AE4008E68A1 /* Rose_CustomChatList_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDC505351ECD7AE4008E68A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC505191ECD7AE4008E68A1 /* Rose_CustomChatList_ */;
+			targetProxy = EDC505341ECD7AE4008E68A1 /* PBXContainerItemProxy */;
+		};
+		EDC505401ECD7AE4008E68A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC505191ECD7AE4008E68A1 /* Rose_CustomChatList_ */;
+			targetProxy = EDC5053F1ECD7AE4008E68A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDC505261ECD7AE4008E68A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC505271ECD7AE4008E68A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC5052B1ECD7AE4008E68A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC5052C1ECD7AE4008E68A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC505451ECD7AE4008E68A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC505461ECD7AE4008E68A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC505481ECD7AE4008E68A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98A98382DE54569A1409A40 /* Pods-Rose_CustomChatList_.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L4ZSGZQF44;
+				INFOPLIST_FILE = Rose_CustomChatList_/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Marilyn-Rose.Rose-CustomChatList-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDC505491ECD7AE4008E68A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA5406956862140AD5E93B2 /* Pods-Rose_CustomChatList_.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L4ZSGZQF44;
+				INFOPLIST_FILE = Rose_CustomChatList_/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Marilyn-Rose.Rose-CustomChatList-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDC5054B1ECD7AE4008E68A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2BCAC363D9523161A9EDAF /* Pods-Rose_CustomChatList_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Rose_CustomChatList_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Marilyn-Rose.Rose-CustomChatList-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rose_CustomChatList_.app/Rose_CustomChatList_";
+			};
+			name = Debug;
+		};
+		EDC5054C1ECD7AE4008E68A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2644033FBC27559559F2CE27 /* Pods-Rose_CustomChatList_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Rose_CustomChatList_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Marilyn-Rose.Rose-CustomChatList-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rose_CustomChatList_.app/Rose_CustomChatList_";
+			};
+			name = Release;
+		};
+		EDC5054E1ECD7AE4008E68A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 917407ED1FBE1D0D47860CE1 /* Pods-Rose_CustomChatList_UITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Rose_CustomChatList_UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Marilyn-Rose.Rose-CustomChatList-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rose_CustomChatList_;
+			};
+			name = Debug;
+		};
+		EDC5054F1ECD7AE4008E68A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCCEEBB59DA175C530CF658 /* Pods-Rose_CustomChatList_UITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Rose_CustomChatList_UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Marilyn-Rose.Rose-CustomChatList-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rose_CustomChatList_;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC505151ECD7AE4008E68A1 /* Build configuration list for PBXProject "Rose_CustomChatList_" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC505451ECD7AE4008E68A1 /* Debug */,
+				EDC505461ECD7AE4008E68A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC505471ECD7AE4008E68A1 /* Build configuration list for PBXNativeTarget "Rose_CustomChatList_" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC505481ECD7AE4008E68A1 /* Debug */,
+				EDC505491ECD7AE4008E68A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC5054A1ECD7AE4008E68A1 /* Build configuration list for PBXNativeTarget "Rose_CustomChatList_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC5054B1ECD7AE4008E68A1 /* Debug */,
+				EDC5054C1ECD7AE4008E68A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC5054D1ECD7AE4008E68A1 /* Build configuration list for PBXNativeTarget "Rose_CustomChatList_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC5054E1ECD7AE4008E68A1 /* Debug */,
+				EDC5054F1ECD7AE4008E68A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDC505121ECD7AE4008E68A1 /* Project object */;
+}
