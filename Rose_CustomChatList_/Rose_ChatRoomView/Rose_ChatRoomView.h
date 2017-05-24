@@ -10,6 +10,10 @@
 
 @interface Rose_ChatRoomView : UIView
 
+@property(nonatomic,assign)CGFloat cellHeight;
+
+@property(nonatomic,assign)UIFont  *fontSize;
+
 -(instancetype)initWithFrame:(CGRect)frame;
 
 -(void)addReceiveMes;

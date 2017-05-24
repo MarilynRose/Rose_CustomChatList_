@@ -9,6 +9,7 @@
 #import "Rose_ChatRoomView.h"
 #import "Rose_TextCell.h"
 #import "Rose_IM_Manager.h"
+#import "mesModel.h"
 @interface Rose_ChatRoomView()<UITableViewDelegate,UITableViewDataSource,Rose_RongYunMessageDelegate>
 
 @property(nonatomic,strong)UITableView *chatTableView;
@@ -21,7 +22,7 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor yellowColor];
+
         [self initTable:frame];
     }
     return self;
@@ -30,7 +31,6 @@
 -(void)initTable:(CGRect)frame{
     
     self.chatTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-    self.chatTableView.backgroundColor = [UIColor redColor];
     self.chatTableView.delegate    = self;
     self.chatTableView.dataSource  = self;
     self.chatTableView.scrollsToTop= NO;
@@ -54,24 +54,51 @@
     [Rose_IM_Manager sharedManager].messageDelegate = self;
 }
 
+
+
+- (void)setCellHeight:(CGFloat)cellHeight
+{
+    if (!cellHeight) {
+        _cellHeight = 24;
+    }else{
+        _cellHeight = cellHeight;
+    }
+    
+}
+
+-(void)setFontSize:(UIFont *)fontSize{
+    if (!fontSize) {
+        _fontSize = [UIFont systemFontOfSize:16.0];
+    }else{
+        _fontSize = fontSize;
+    }
+}
+
 #pragma tableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.textDataArrayM.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 30;
+    
+    mesModel *model = self.textDataArrayM[indexPath.row];
+    
+    if (model.cellHeightFloat) {
+        return model.cellHeightFloat;
+    }else{
+        return self.cellHeight;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSString *textString = self.textDataArrayM[indexPath.row];
+    mesModel *model = self.textDataArrayM[indexPath.row];
     static NSString *ID = @"textCell";
     Rose_TextCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     if (!cell) {
         cell = [[Rose_TextCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
     }
-    cell.mesLabel.text = textString;
+    cell.mesLabel.text = model.message;
     return cell;
     
 }
@@ -105,10 +132,12 @@
 }
 
 -(void)updateUI:(NSString *)message{
+    mesModel *model = [[mesModel alloc] initWithMessage:message fontSize:self.fontSize width:self.bounds.size.width height:self.cellHeight];
+    
     dispatch_async ( dispatch_get_main_queue (), ^{
         
         NSIndexPath *beforeIndexPath = [NSIndexPath indexPathForRow:self.textDataArrayM.count inSection:0];
-        [self.textDataArrayM addObject:message];
+        [self.textDataArrayM addObject:model];
         [self.chatTableView beginUpdates];
         [self.chatTableView insertRowsAtIndexPaths:@[beforeIndexPath] withRowAnimation:UITableViewRowAnimationBottom];
         [self.chatTableView endUpdates];

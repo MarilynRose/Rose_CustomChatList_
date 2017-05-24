@@ -10,6 +10,7 @@
 		5CE1054A7447B7F695018CEB /* libPods-Rose_CustomChatList_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DA95D404F069E9E992FFED /* libPods-Rose_CustomChatList_Tests.a */; };
 		622C04E3DE03B915917E049D /* libPods-Rose_CustomChatList_.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCB7B3E04CD659A24B778A1 /* libPods-Rose_CustomChatList_.a */; };
 		DF5CA675071D920B78A2447B /* libPods-Rose_CustomChatList_UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E552942DAEE52F2808ABDECD /* libPods-Rose_CustomChatList_UITests.a */; };
+		ED541BE51ED56878004FEB35 /* mesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED541BE41ED56878004FEB35 /* mesModel.m */; };
 		EDC5051F1ECD7AE4008E68A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC5051E1ECD7AE4008E68A1 /* main.m */; };
 		EDC505221ECD7AE4008E68A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505211ECD7AE4008E68A1 /* AppDelegate.m */; };
 		EDC505251ECD7AE4008E68A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC505241ECD7AE4008E68A1 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 		ADCB7B3E04CD659A24B778A1 /* libPods-Rose_CustomChatList_.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rose_CustomChatList_.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCCEEBB59DA175C530CF658 /* Pods-Rose_CustomChatList_UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rose_CustomChatList_UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rose_CustomChatList_UITests/Pods-Rose_CustomChatList_UITests.release.xcconfig"; sourceTree = "<group>"; };
 		E552942DAEE52F2808ABDECD /* libPods-Rose_CustomChatList_UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rose_CustomChatList_UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED541BE31ED56878004FEB35 /* mesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesModel.h; sourceTree = "<group>"; };
+		ED541BE41ED56878004FEB35 /* mesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mesModel.m; sourceTree = "<group>"; };
 		EDC5051A1ECD7AE4008E68A1 /* Rose_CustomChatList_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rose_CustomChatList_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC5051E1ECD7AE4008E68A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDC505201ECD7AE4008E68A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 		EDC505571ECD88F9008E68A1 /* Rose_ChatRoomView */ = {
 			isa = PBXGroup;
 			children = (
+				ED541BE31ED56878004FEB35 /* mesModel.h */,
+				ED541BE41ED56878004FEB35 /* mesModel.m */,
 				EDC505581ECD893C008E68A1 /* Rose_ChatRoomView.h */,
 				EDC505591ECD893C008E68A1 /* Rose_ChatRoomView.m */,
 				EDC5055B1ECD9161008E68A1 /* Rose_TextCell.h */,
@@ -504,6 +509,7 @@
 				EDC505531ECD7F6B008E68A1 /* Rose_IM_Manager.m in Sources */,
 				EDC505561ECD87B6008E68A1 /* chatRoomVC.m in Sources */,
 				EDC5055A1ECD893C008E68A1 /* Rose_ChatRoomView.m in Sources */,
+				ED541BE51ED56878004FEB35 /* mesModel.m in Sources */,
 				EDC505251ECD7AE4008E68A1 /* ViewController.m in Sources */,
 				EDC505221ECD7AE4008E68A1 /* AppDelegate.m in Sources */,
 				EDC5051F1ECD7AE4008E68A1 /* main.m in Sources */,

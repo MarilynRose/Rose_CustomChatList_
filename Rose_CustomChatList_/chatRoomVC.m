@@ -26,6 +26,10 @@
     // Do any additional setup after loading the view.
     self.automaticallyAdjustsScrollViewInsets = false;
     _chatRoom = [[Rose_ChatRoomView alloc]initWithFrame:CGRectMake(10, 74, 200, 200)];
+    _chatRoom.cellHeight = 30;
+    _chatRoom.fontSize = [UIFont systemFontOfSize:16.0];
+    _chatRoom.layer.borderColor = [UIColor blackColor].CGColor;
+    _chatRoom.layer.borderWidth = 1.0;
     [self.view addSubview:_chatRoom];
     
     self.view.backgroundColor = [UIColor whiteColor];
